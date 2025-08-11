@@ -1,6 +1,15 @@
-The ideea for this app is to help students to find jobs/interships/for practice more easily. The APIs where wrote entirely in Java using  Spring Boot as framework,  MySql and MongoDB as databases. 
-The Apis are:
--for creating and login for both students and companies, both being separated entities and  using as main method of authentification JWT;
--for making changes in profiles anytime for students and for companies;
--for companies to create offers and delete them 
--for filtering offers based on some criterias as such: type, location
+The idea of this application is to help students find jobs, internships, and practice opportunities more easily.
+The backend APIs are developed entirely in Java, using the Spring Boot framework, with MySQL and MongoDB as databases.
+API Features
+
+    User Authentication & Registration
+    Separate endpoints for students and companies, with JWT as the main authentication method.
+
+    Profile Management
+    Students and companies can update their profiles at any time.
+
+    Offer Management
+    Companies can create and delete job or internship offers.
+
+    Offer Filtering
+    Search and filter offers based on criteria such as type and location.
