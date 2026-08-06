@@ -1,4 +1,4 @@
-# 🚀 SkillLaunch — Backend API
+#  SkillLaunch — Backend API
 
 A RESTful backend that connects **students** with **companies** offering jobs, internships, and practice placements — built with **Spring Boot 3** and **Java 21**. Companies post opportunities, students search and filter them, and both sides authenticate independently through a shared JWT-based security layer.
 
@@ -140,9 +140,7 @@ gradlew.bat bootRun
 
 The API will be available at `http://localhost:8080`.
 
-## ⚠️ Security Note
 
-Before making this repository public (or if it already is), rotate and remove any credentials currently hard-coded in `application.properties` — MySQL, MongoDB, and email credentials should never be committed to source control. Move them to environment variables or a secrets manager, and add `application.properties` (or a `application-local.properties` variant) to `.gitignore`, keeping only a template (`application.properties.example`) with placeholder values in the repo.
 
 ## Known Limitations / Roadmap
 
@@ -152,6 +150,4 @@ Before making this repository public (or if it already is), rotate and remove an
 - **Consistent DTO naming** — endpoints mix raw entity responses (`GET /api/student/{id}`) with DTO responses (`GET /api/student/studentDto/{id}`); consolidating on DTOs everywhere would tighten the API surface.
 - **RSA keypair** present under `resources/jwt/` (`app.key` / `app.pub`) but the current `JwtService` implementation signs with a symmetric HMAC key rather than these — likely leftover from an earlier design, worth removing or wiring in for asymmetric signing.
 
----
 
-*A full-stack-ready Spring Boot backend demonstrating dual-role JWT authentication, layered service/repository architecture, and mixed relational + document persistence.*
